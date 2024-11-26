@@ -1,0 +1,88 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans&display=swap');
+
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Example font */
+    background-color: #f7fafc; /* Example background color */
+    color: #374151; /* Example text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Apply margin and padding to specific elements */
+  .container {
+    max-width: 1200px; /* Example max width */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 0 20px; /* Example horizontal padding */
+  }
+
+  .big-text {
+    font-size: large;
+  }
+
+  .small-text {
+    font-size: 10px;        /* Smaller font size */
+    letter-spacing: 0.05em; /* Adjust letter spacing */
+    line-height: 1.1;       /* Tighter line height */
+}
+
+/* Position pagination bullets above the images */
+.custom-pagination {
+  margin-bottom: 1rem; /* Adjust spacing from the images */
+}
+
+.swiper-pagination-bullet {
+  width: 16px; /* Increase size */
+  height: 16px; /* Increase size */
+  background-color: #1d4ed8; /* Blue color */
+  opacity: 0.7;
+  margin: 0 8px; /* Add spacing between bullets */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2563eb; /* Darker blue for active bullet */
+  transform: scale(1.2); /* Enlarge active bullet */
+  opacity: 1;
+}
+
+/* Optional hover effect */
+.swiper-pagination-bullet:hover {
+  opacity: 1;
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+
+
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+
